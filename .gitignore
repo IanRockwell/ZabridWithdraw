@@ -1,0 +1,23 @@
+# Compiled class file
+*.class
+
+# Log files
+*.log
+
+# IntelliJ IDEA files
+.idea/
+
+# Eclipse files
+.project
+.classpath
+.settings/
+
+# Build output
+out/
+
+# Compiled plugins
+target/
+
+# Temporary files
+# hi
+*.tmp

@@ -1,0 +1,35 @@
+# ZabridWithdraw Plugin Configuration
+
+# Plugin Information
+plugin_name: ZabridWithdraw
+author: Zabrid
+version: 1.0.0
+
+# Settings
+settings:
+  max_withdraw_amount: 999999 # Maximum amount that can be withdrawn.
+  min_withdraw_amount: 1000 # Minimum amount that can be withdrawn.
+
+# Banknote Item
+banknote_item:
+  material: MAP # Material of the banknote item.
+  glowing: true # Whether the banknote item glows.
+  name: "&x&F&B&7&4&7&4&lBanknote" # Display name of the banknote item.
+  lore:
+    - ""
+    - "&x&F&B&7&4&7&4 ▪ &fValue: &x&F&B&7&4&7&4${value}"
+    - "&x&F&B&7&4&7&4 ▪ &fSigner: &x&F&B&7&4&7&4{signer}"
+    - ""
+    - "&7Right-click to redeem this banknote."
+
+# Messages
+messages:
+  plugin_prefix: "&6[ZabridWithdraw] " # Prefix for plugin-related messages.
+
+  successfully_redeemed: "&aYou have successfully redeemed {amount} x Banknote(s) for ${total_value}!"
+  successfully_withdrew: "&aYou have successfully withdrew ${value} onto a banknote."
+  invalid_usage: "&cYou must specify an amount to withdraw. (/withdraw <amount>)"
+  invalid_number: "&cThe amount you specified is not a valid number."
+  below_minimum: "&cThe amount you specified is below the minimum. (Minimum: ${minimum})"
+  above_maximum: "&cThe amount you specified is above the maximum. (Maximum: ${maximum})"
+  insufficient_balance: "&cYou don't have enough balance to withdraw. (Your Balance: ${balance})"

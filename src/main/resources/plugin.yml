@@ -1,0 +1,21 @@
+name: ZabridWithdraw
+version: 1.0.0
+author: Zabrid
+description: Withdraw money from your balance and onto a banknote.
+
+main: me.zabrid.zabridwithdraw.ZabridWithdraw
+api-version: '1.13'
+
+commands:
+  withdraw:
+    description: "Withdraw money from your balance."
+    usage: "/withdraw <amount>"
+    aliases: []
+    permission: withdraw.use
+    permission-message: "You do not have permission to use this command"
+  zabridwithdrawreload:
+    description: "Reload the configuration file for ZabridWithdraw."
+    usage: "/zabridwithdrawreload"
+    aliases: []
+    permission: withdraw.admin
+    permission-message: "You do not have permission to use this command"
